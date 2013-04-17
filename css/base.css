@@ -1,0 +1,340 @@
+@charset "UTF-8";
+
+/*
+	YUI 3.8.0 (build 5744)
+	Copyright 2012 Yahoo! Inc. All rights reserved.
+	Licensed under the BSD License.
+	http://yuilibrary.com/license/
+
+	Font-size Adjustment
+	
+	77% = 10px	| 	123.1% = 16px	|	167% = 22px	
+	85% = 11px	|	131% = 17px		|	174% = 23px
+	93% = 12px	|	138.5% = 18px	|	182% = 24px
+	100% = 13px	|	146.5% = 19px	|	189% = 25px
+	108% = 14px	|	153.9% = 20px	|	197% = 26px
+	116% = 15px	|	161.6% = 21px	|
+
+*/
+
+/*
+	Suggested Order
+
+	display
+	position
+	float
+	clear
+
+	width
+	height
+
+	margin (top, right, bottom, left)
+	padding (top, right, bottom, left)
+
+	list-style (type, image, position)
+
+	border
+	background (color, image, repeat, attachment, position)
+
+	color
+	font (family, style, variant, weight, stretch, size)
+	
+	text-indent
+	text-decoration
+	text-align
+	vertical-align
+	white-space
+	other text
+	content
+*/
+
+/* @group Reset Style*/
+
+html {
+	background: transparent;
+	color: #000000;
+	}
+
+body,
+h1,h2,h3,h4,h5,h6,
+p,
+div,
+dl,dt,dd,
+ul,ol,li,
+pre,code,
+form,fieldset,legend,input,textarea,
+blockquote,
+th,td {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+
+fieldset,img {
+	border: 0;
+	}
+
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style: normal;
+	font-weight: normal;
+	}
+
+ol,ul {
+	list-style: none;
+	list-style-position: outside;
+	}
+	
+caption,th {
+	text-align: left;
+	}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+	}
+
+q:before,q:after {
+	content:'';
+	}
+
+abbr,acronym {
+	border:0;
+	font-variant:normal;
+	}
+
+sup {
+	vertical-align: text-top;
+	}
+
+sub {
+	vertical-align: text-bottom;
+	}
+
+input, textarea, select {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	}
+
+/* @end */
+
+/* @group Text Module */
+
+strong {
+	font-weight: bold;
+	}
+
+pre,code,kbd,samp,tt {
+	font-family: "Courier New", Courier, mono;
+	}
+
+select,input,button,textarea {
+	font-size: 99%;
+	}
+
+.uppercase {
+	text-transform: uppercase;
+	}
+
+.notice {
+	}
+
+.require {
+	}
+
+.bullet {
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+	}
+
+.lang-ja {
+	font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','Meiryo','メイリオ','Osaka','ＭＳ Ｐゴシック',sans-serif;
+	}
+
+.lang-en {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;	
+	}
+
+/* @end */
+
+/* @group Hypertext Module */
+
+a {
+	color: #333333;
+	text-decoration: underline;
+	}
+
+a:link {
+	}
+
+a:visited {
+	}
+
+a:hover {
+	color: #000000;
+	text-decoration: none;
+	}
+
+a:active {
+	}
+
+/* @end */
+
+/* @group Style Modules */
+
+/* @group column module */
+
+.columns-row {
+	}
+
+.columns-row:before,
+.columns-row:after {
+	content: "";
+	display: block;
+	overflow: hidden;
+	}
+
+.columns-row:after {
+	clear: both;
+	}
+
+/* For IE 6/7 (trigger hasLayout) */
+.columns-row {
+	zoom: 1;
+	}
+
+.columns-row .column {
+	float: left;
+	}
+
+/* @end */
+
+/* @group clearfix */
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: block;
+	overflow: hidden;
+	}
+
+.clearfix:after {
+	clear: both;
+	}
+
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {
+	zoom: 1;
+	}
+
+/* @end */
+
+/* @group separator */
+
+div.separator {
+	}
+
+div.separator hr {
+	display: none;
+	}
+
+/* @end */
+
+/* @end */
+
+/* @group Structure */
+
+/* @group Structure Elements */
+
+html {
+	}
+
+body {
+	font: 13px/1 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','Meiryo','メイリオ','Osaka','ＭＳ Ｐゴシック',sans-serif;
+	*font-size: small; /* for IE */
+	*font: x-small; /* for IE in quirks mode */
+	}
+
+* html body {
+	letter-spacing: 0.1em;
+	}
+
+*:first-child+html body {
+	letter-spacing: 0.1em;
+	}
+
+
+/* @end */
+
+/* @group Definition Elements */
+
+/* @group Container */
+
+#page-top {
+	color: #333333;
+	}
+
+.page-frame {
+	}
+
+#page-body {
+	}
+
+#main-content {
+	}
+
+#global-header {
+	}
+
+#global-footer {
+	}
+
+/* @end */
+
+/* @group #global-header */
+
+#global-header .header {
+	}
+	
+/* @end */
+
+/* @group #global-footer */
+
+#global-footer .footer {
+	}
+	
+#copyright {
+	line-height: 1.2;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	}
+
+/* @end */
+
+/* @group #page-content */
+
+#page-content .article {
+	}
+
+#page-content .section {
+	}
+	
+/* @end */
+
+/* @end */
+
+/* @end */
+
+/* @group Categories */
+
+/* @group home */
+
+.home {
+	}
+
+/* @end */
+
+/* @end */
+
